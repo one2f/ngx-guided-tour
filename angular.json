@@ -27,7 +27,6 @@
                             "projects/ngx-guided-tour/src/lib/guided-tour-base-theme.scss"
                         ],
                         "baseHref": "/ngx-guided-tour/",
-                        "deployUrl": "/ngx-guided-tour/",
                         "scripts": []
                     },
                     "configurations": {
@@ -169,5 +168,7 @@
             }
         }
     },
-    "defaultProject": "ngx-guided-tour-demo"
+    "cli": {
+      "analytics": false
+    }
 }

@@ -12,9 +12,6 @@ import { CommonModule } from '@angular/common';
     ],
     exports: [
         GuidedTourComponent
-    ],
-    entryComponents: [
-        GuidedTourComponent
     ]
 })
 export class NgxGuidedTourModule {

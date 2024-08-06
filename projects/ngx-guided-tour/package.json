@@ -1,11 +1,7 @@
 {
     "name": "@one2f/ngx-guided-tour",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "description": "Guided tour for your Angular applications.",
-    "peerDependencies": {
-        "@angular/common": ">=13.0.0",
-        "@angular/core": ">=13.0.0"
-    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/one2f/ngx-guided-tour.git"
