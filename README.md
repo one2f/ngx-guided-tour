@@ -1,3 +1,7 @@
+## This package is a fork of the [ngx-guided-tour](https://github.com/lsqlabs/ngx-guided-tour) by [lsqlabs](https://github.com/lsqlabs). The original package is no longer actively maintained.
+
+---
+
 # ngx-guided-tour
 Guided tour component using SASS and typescript. Allows you to use selectors to step your user through workflows and introduce them to your application. Customiziable theme and many features. Heavily inspired by [react-joyride](https://github.com/gilbarbara/react-joyride)
 
@@ -7,11 +11,11 @@ See a quick demo - [https://lsqlabs.github.io/ngx-guided-tour/](https://lsqlabs.
 
 1. Install npm module:
 
-    `npm install ngx-guided-tour --save`
+    `npm install @one2f/ngx-guided-tour --save`
 
 2. Add modules to app.module.ts
 ```typescript
-import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
+import {GuidedTourModule, GuidedTourService} from '@one2f/ngx-guided-tour';
 
 @NgModule({
     imports: [
@@ -27,7 +31,7 @@ import {GuidedTourModule, GuidedTourService} from 'ngx-guided-tour';
 ## Usage
 
 Add ngx-guided-tour to your app.component.html .
-    
+
 ```html
 <ngx-guided-tour></ngx-guided-tour>
 ```
@@ -35,7 +39,7 @@ Add ngx-guided-tour to your app.component.html .
 Add guided-tour-base-theme.scss to your main style import page. If you want to create your own theme add it after your defined constants.
 
 ```scss
-@import '../node_modules/ngx-guided-tour/scss/guided-tour-base-theme.scss';
+@import '../node_modules/@one2f/ngx-guided-tour/scss/guided-tour-base-theme.scss';
 ```
 Define your tour using the GuidedTour type:
 
@@ -162,8 +166,8 @@ backText (optional) - The text of the back button.
 
 progressIndicatorLocation (optional) - The location of the progress indicator (e.g. "1/5"). It can be placed inside the next button (default), at the top of the tour block or hidden. If set to ProgressIndicatorLocation.TopOfTourBlock the indicator will be shown on all steps. If it's shown inside the next button, it will be hidden on the last step.
 
-progressIndicator (optional) - A ng-template to customize the progress indicator (e.g. "1/5"). The following context is provided:  
-    - currentStepNumber: The number of the current step (starting with 1)  
+progressIndicator (optional) - A ng-template to customize the progress indicator (e.g. "1/5"). The following context is provided:
+    - currentStepNumber: The number of the current step (starting with 1)
     - totalSteps: The total number of steps
 
 
